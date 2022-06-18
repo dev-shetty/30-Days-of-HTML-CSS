@@ -1,0 +1,50 @@
+<!--Day 2 - Form Elements-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Elements</h1>
+    <form action="#"><!--Action means where to send the data when form is submitted-->
+    <fieldset> <!--Fieldset used to group some elements in a border-->
+        <legend>Enter Your Name</legend><!--legend makes a space in fieldset to give a cool look-->
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" id="fname">
+        <!--For tag for label and id tag for input should be same to bind them together-->
+        <br><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname" id="lname"><br><br>
+    </fieldset><br>
+
+    <!--Select from a drop down menu-->
+    <label for="class">Choose your Class</label>
+    <select name="class" id="class">
+        <!--size="3" - To specify size for the list-->
+        <!--multiple attribute to choose more than one option by pressing Ctrl key-->
+        <option value="X">10th</option>
+        <option value="XI">11th</option>
+        <option value="XII">12th</option>
+        <option value="Engg" selected >Engineering</option>
+        <!--Selected attribute is used to preselect an option-->
+    </select><br><br>
+    <label for="address">Enter Address</label><br>
+    <textarea name="address" id="address" cols="50" rows="10" placeholder="Enter text here"></textarea><br><br>
+
+    <!--Gives a list of data in teh input field to select from-->
+    <label for="college">Enter college name:</label>
+    <input list="college" name="college">
+    <datalist id="college">
+        <option value="Sahyadri College of Engineering and Management"></option>
+        <option value="Vivekananda College"></option>
+        <option value="St. Joseph College"></option>
+        <option value="Nitte"></option>
+    </datalist>
+    <br><br><button type="submit">Submit</button><br><br>
+    </form>
+</body>
+</html>

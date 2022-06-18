@@ -1,0 +1,88 @@
+<!-- Day - 2 again again: Input Attributes-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Input attributes</h1>
+    <!-- value attribute - to set a preset value in the field -->
+    <label for="preset">(It has a preset value)</label>
+    <input type="text" name="preset" id="preset" value="I am here">
+    <br><br>
+    <!-- readonly attribute - to make the input box read only -->
+    <label for="readonly">(This is readonly)</label>
+    <input type="text" name="readonly" id="readonly" value="Can't change me" readonly>
+    <br><br>
+    <!-- disabled attribute - to make the input box disabled -->
+    <label for="disabled">(This is disabled)</label>
+    <input type="text" name="disabled" id="disabled" value="Can't touch me" disabled>
+    <br><br>
+    <!-- size attribute - to set the size of the box (default 20) -->
+    <label for="size">(This is sized box of size 8)</label>
+    <input type="text" name="size" id="size" placeholder="I am Small" size="8">
+    <br><br>
+    <!-- maxlength attribute - to set maximum number of characters that can be entered -->
+    <label for="maxlength">(This box has maxlength of 6)</label>
+    <input type="text" name="maxlength" id="maxlength" placeholder="Can't go more that 6....bet" maxlength="6">
+    <br><br>
+    <!-- max and min attribute - to add maximum and minimum limit -->
+    <label for="limits">(This is box with limits)</label>
+    <input type="number" name="limits" id="limits" placeholder="Can't go less than 10" min="10">
+    <br>
+    <label for="limits">(This is box with limits)</label>
+    <input type="number" name="limits" id="limits" placeholder="Can't go more than 10" max="10">
+    <!-- Can also add min and max date also -->
+    <br><br>
+    <!-- multiple attribute - to select multiple options -->
+    <label for="multiple">(Multiple Items can be selected) Press Ctrl</label><br>
+    <select name="class" id="class" multiple>
+        <option value="X">10th</option>
+        <option value="XI">11th</option>
+        <option value="XII">12th</option>
+        <option value="Engg">Engineering</option>
+    </select><br>
+    <!-- pattern attribute - to set pattern to the box if wrong wont be submitted -->
+    <label for="pattern">(Follow the pattern)</label>
+    <input type="number" name="pattern" id="pattern" pattern="[0-9]{3}-[0-9]{4}" placeholder="123-4567">
+    <br><br>
+    <!-- pattern attribute - to set pattern to the box if wrong wont be submitted -->
+    <label for="placeholder">(It has a placeholder)</label>
+    <input type="number" name="placeholder" id="placeholder" placeholder="I am a Placeholder">
+    <br><br> 
+    <!-- required attribute - to make it compulsory cant submit without it -->
+    <label for="required">(This field is required)</label>
+    <input type="text" name="required" id="required" required>
+    <br><br>
+    <!-- step attribute - to make the number step in the range-->
+    <label for="step">(This number is multiple of 5)</label>
+    <input type="number" name="step" id="step" step="5">
+    <br><br>
+    <!-- autofocus attribute - autofocuses when page loads-->
+    <label for="autofocus">(I am focused)</label>
+    <input type="text" name="autofocus" id="autofocus" autofocus>
+    <br><br>
+    <!-- height and width attribute - set input image height and width-->
+    height and width attribute - set input image height and width <br><br>
+    <!-- list attribute - to list out items in text box -->
+    <label for="college">Lists item in the box</label>
+    <input list="college" name="college">
+    <datalist id="college">
+        <option value="Sahyadri College of Engineering and Management"></option>
+        <option value="Vivekananda College"></option>
+
+        <option value="St. Joseph College"></option>
+        <option value="Nitte"></option>
+    </datalist><br><br>
+    <!-- autocomplete tag - autocompletes the box by letting browser show previous inputs -->
+    <label for="autocomplete">Browser will show last inputs (ON by default - Here its OFF)</label>
+    <input type="text" name="autocomplete" id="autocomplete" autocomplete="off">
+    <!-- Here autocomplete is off so browser wont show last inputs -->
+    <br><br>
+    <input type="submit" value="Submit">
+</body>
+</html>

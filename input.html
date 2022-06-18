@@ -1,0 +1,108 @@
+<!--Day - 2 again: All the input tags-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Input Types</h1>
+    <!-- In input tag name is used by the <form> tag for POST and GET requests while id tag is used by JavaScript and it should be unique -->
+    <!-- Button input -->
+    <label for="button">Button Input</label>
+    <input type="button" value="Button">
+    <br><br>
+    <!-- Checkbox Input -->
+    <label for="checkbox">Checkbox</label>
+    <input type="checkbox" name="checkbox" id="checkbox">
+    <br><br>
+    <!-- Color Input -->
+    <label for="color">Color Input</label>
+    <input type="color" name="color" id="color">
+    <br><br>
+    <!-- Date Input -->
+    <label for="date">Date Input</label>
+    <input type="date" name="date" id="date">
+    <br><br>
+    <!-- Datetime - local Input to set both date and time  -->
+    <label for="datetime">Datetime Input</label>
+    <input type="datetime-local" name="datetime" id="datetime">
+    <br><br>
+    <!-- Email Input -->
+    <label for="email">Email Input</label>
+    <input type="email" name="email" id="email">
+    <br><br>
+    <!-- File Input makes you choose a file-->
+    <label for="file">File Input</label>
+    <input type="file" name="file" id="file">
+    <br><br>
+    <!-- Hidden Input - it is not shown to the user but the value is submitted when form is submitted-->
+    <label for="hidden">Hidden Input - You can't see me!</label>
+    <input type="hidden" name="hidden">
+    <br><br>
+    <!-- Image Input -->
+    <label for="image">Image Input</label>
+    <input type="image" src="#" alt="This should be an image input">
+    <br><br>
+    <!-- Month Input -->
+    <label for="month">Month Input</label>
+    <input type="month" name="month" id="month">
+    <br><br>
+    <!-- Number Input -->
+    <label for="number">Number Input</label>
+    <input type="number" name="number" id="number">
+    <br><br>
+    <!-- Password Input - Shows censored text for password -->
+    <label for="password">Password Input</label>
+    <input type="password" name="password" id="password">
+    <br><br>
+    <!-- Radio Input -->
+    <input type="radio" name="radio" id="radio">
+    <label for="radio">Radio Input 1</label>
+    <input type="radio" name="radio" id="radio">
+    <label for="radio">Radio Input 2</label>
+    <br><br>
+    <!-- Range Input -->
+    <label for="range">Range Input</label>
+    <input type="range" name="range" id="range" min="0" max="100">
+    <!-- min and max are used to set minimum and maximum value -->
+    <br><br>
+    <!-- Reset Input - Used to reset all the set values-->
+    <label for="reset">Reset Input</label>
+    <input type="reset" value="Reset">
+    <br><br>
+    <!-- Search Input - Creates a search box-->
+    <label for="search">Search Input</label>
+    <input type="search" name="search" id="search"><!--value tag is used to set text in button-->
+    <br><br>
+    <!-- Submit Input - To submit the form -->
+    <label for="submit">Sumbit Input</label>
+    <input type="submit" value="Submit">
+    <br><br>
+    <!-- Tel Input - used to add telephone value -->
+    <label for="tel">Tel Input - Add Telephone Number</label>
+    <input type="tel" name="tel" id="tel" pattern="[0-9]{10}" required>
+    <!--Pattern attribute checks the regex pattern and shows error when it doesn't match-->
+    <!-- required attribute makes box compulsory to fill otherwise form won't be submitted -->
+    <br><br>
+    <!-- Text Input -->
+    <label for="text">Text Input</label>
+    <input type="text" name="text" id="text">
+    <br><br>
+    <!-- Time Input -->
+    <label for="time">Time Input</label>
+    <input type="time" name="time" id="time">
+    <br><br>
+    <!-- URL Input -->
+    <label for="url">URL Input</label>
+    <input type="url" name="url" id="url">
+    <br><br>
+    <!-- Week Input -->
+    <label for="week">Week Input</label>
+    <input type="week" name="week" id="week">
+    <br><br>
+</body> 
+</html>
