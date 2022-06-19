@@ -1,0 +1,107 @@
+<!-- Day 3 - Semantic HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        text-align: center;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    ul li{
+        padding: 5px;
+
+    }
+    ul a{
+        text-decoration: none;
+        color: black;
+    }
+    aside{
+        float: right;
+        width: 25%;
+        top:50px;
+        padding: 2%;
+        margin: 2%;
+        background-color: lightcoral    ;
+    }
+    section{
+        margin: 2%;
+    }
+    main{
+        margin: 2%;
+    }
+    footer{
+        padding: 1vw 0;
+        background-color: lightgrey;
+        clear: both;
+    }
+    footer li{
+        list-style: none;
+        display: inline;
+        margin: 20px;
+    }
+    details{
+        margin: 2%;
+    }
+    details pre{
+        font-family: 'Times New Roman', Times, serif;
+        background-color: lightgoldenrodyellow;
+    }
+</style>
+<body>
+    <header>
+        <h1>HTML Semantics</h1>
+    </header>
+    <br>
+    <nav>
+        <ul>
+            <li><a href="#">Home1</a></li>
+            <li><a href="#">Home2</a></li>
+            <li><a href="#">Home3</a></li>
+            <li><a href="#">Home4</a></li>
+        </ul>
+    </nav>
+    <br>
+    <main>
+        <article>
+            <h1>Heading</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, officiis assumenda doloremque hic quisquam ea non illum odio dicta ullam, doloribus placeat aliquid eligendi unde praesentium ratione vero tempore qui harum provident magnam deserunt neque velit. Inventore illum sequi, ratione repellendus tenetur dolores ipsam cum praesentium qui, eius incidunt sunt.</p>
+            <aside>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nesciunt!
+            </aside>
+        </article>
+        <br>
+    </main>
+    <section>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus obcaecati unde nam. Soluta vitae quae, nihil ipsam esse molestias? Maiores, nostrum dicta expedita, aperiam fuga voluptatem quisquam cumque vitae deleniti optio tempora laudantium cum asperiores, velit animi omnis exercitationem numquam labore eveniet debitis amet. Minima ipsum fugiat voluptatum. Illum fugiat tenetur, nam quis sit soluta facilis excepturi magnam obcaecati repellat odit at nobis aliquam maiores expedita dolor deleniti illo explicabo vitae. Reprehenderit, tenetur laboriosam beatae vitae iure modi quos voluptatibus.</p>
+    </section>
+    <details>
+        <summary>About Me</summary>
+        <pre>
+            <p>
+                Hello! 
+                I am Deveesh. I am a 1st year Engineering Student. Currently Learning Web Development!
+                Thanks for visiting this basics Semantic HTML page.
+                Have a good day :)
+            </p>
+        </pre>
+    </details>
+    <footer>
+        <li>Copyright Deveesh; 2022</li>
+        <li>Twitter: @ShettyDeveesh</li>
+    </footer>
+</body>
+</html>
