@@ -1,0 +1,243 @@
+<!-- Day 3 - Survey form using HTML and basics CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@200&display=swap');
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background: #121212;
+        font-size: 1.5em;
+    }
+    header{
+        margin: 5px;
+        text-align: center;
+        color: royalblue;
+        font-family: 'Spectral SC', serif;
+    }
+    header h1{
+        text-shadow: 0 0 3px rgb(0, 0, 255), 0 0 5px rgba(255, 255, 255, 0.601);
+    }
+    form{
+        margin: 1%;
+        font-family: 'Spectral SC', serif;
+        color: #ffffffcc;
+    }
+    input{
+        background-color: rgba(255, 255, 255, 0.849);
+        font-size: inherit;
+    }
+    input[type="text"]{
+        background-color: rgba(255, 255, 255, 0.849);
+        width: 20vw;
+        height: 3vh;
+        font-size: inherit;
+    }
+    label{
+        margin: 5px;
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+    }
+    .Personal{
+        padding: 20px 5px;
+        width: 49%;
+    }
+    .College{
+        padding: 20px 5px;
+        width: 49%;
+        margin-left: 1%;
+    }
+    fieldset legend{
+        margin-left: 30px;
+    }
+    textarea{
+        background-color: rgba(255, 255, 255, 0.849);
+        font-size: inherit;
+    }
+    .Top{
+        display: flex;
+    }
+    #class, #division, #age{
+        width: 50px;
+    }
+    .bottom{
+        margin-top: 1%;
+    }
+    select{
+        font-size: 20px;
+        width: 100px;
+        background-color: white;
+    }
+    input[type="radio"]{
+        margin: 20px;
+    }
+    input[type="submit"]{
+        font-size: 20px;
+        width: 100px;
+        padding: 10px;
+        margin: 20px;
+    }
+    .submit{
+        text-align: center;
+    }
+    #budget{
+        width: 20%;
+    }
+    #budgetInput{
+        width: 150px;
+        border-radius: 20px;
+        text-align: center;
+    }
+</style>
+<body>
+    <header>
+        <h1>Form for buying a Laptop</h1>
+    </header>
+    <form action="#">
+        <div class="Top">
+        <fieldset class="Personal">
+            <legend>Personal Details</legend>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname"><br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname"><br><br>
+
+            <label for="father">Father's Name</label>
+            <input type="text" name="father" id="father"><br>
+
+            <label for="mother">Mother's Name</label>
+            <input type="text" name="mother" id="mother"><br><br>
+
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="150"><br>
+
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male">Male
+            <input type="radio" name="gender" id="female">Female
+            <br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob"><br> 
+
+            <label for="address">Permanent Address</label>
+            <textarea name="address" id="address" cols="20" rows="5"></textarea>
+
+
+        </fieldset>
+        <fieldset class="College">
+            <legend>Educational Details</legend>
+            <label for="college">School/College Name</label>
+            <input type="text" name="college" id="college"><br>
+
+            <label for="class">Class</label>
+            <input type="text" name="class" id="class"><br>
+
+            <label for="division">Division</label>
+            <input type="text" name="division" id="division"><br><br>
+
+            <label for="address">School/College Address</label>
+            <textarea name="address" id="address" cols="20" rows="5"></textarea>
+        </fieldset>        
+    </div>
+
+
+    <div class="bottom">
+        <fieldset>
+            <legend>Laptop Details</legend>
+            <label for="purpose">Purpose of buying laptop</label>
+            <input list="purpose" name="purpose">
+            <datalist id="purpose">
+                <option value="For School/College use"></option>
+                <option value="For Work"></option>
+                <option value="Commercial Purpose"></option>
+                <option value="Others"></option>
+            </datalist><br><br>
+
+            <label for="budget">Budget</label>
+            <input type="range" name="budget" id="budget" min="30000" max="400000" step="5000" onchange="updateBudget(this.value)">
+            <input type="text" id="budgetInput" value="" readonly placeholder="------">
+            <br>
+
+            <label for="os">Operating System</label>
+            <input type="radio" name="os" id="windows">Windows
+            <input type="radio" name="os" id="macOS">macOS
+            <input type="radio" name="os" id="Linux">Linux
+            <input type="radio" name="os" id="DOS">DOS
+            <br>
+        
+            <label for="brand">Laptop Brand</label>
+            <input type="text" name="brand" id="brand"><br>
+
+            <label for="model">Enter Model Name</label>
+            <input type="text" name="model" id="model"><br><br>
+
+            <label for="ram">RAM Memory</label>
+            <select name="ram" id="ram">
+                <option value="2GB">2GB</option>
+                <option value="4GB">4GB</option>
+                <option value="8GB">8GB</option>
+                <option value="16GB">16GB</option>
+            </select><br>
+
+            <label for="storage">Secondary Storage Type</label>
+            <input type="radio" name="storage" id="HDD">HDD
+            <input type="radio" name="storage" id="SSD">SSD
+            <input type="radio" name="storage" id="both">Both
+            <br>
+
+            <label for="Secondary Storage option">Secondary Storage Size</label>
+            <select name="ram" id="ram">
+                <option value="256GB">256GB</option>
+                <option value="512GB">512GB</option>
+                <option value="1TB">1TB</option>
+                <option value="2TB">2TB</option>
+            </select><br>
+
+            <label for="color">Color</label>
+            <input type="radio" name="color" id="Black">Matte Black
+            <input type="radio" name="color" id="Silver">Silver
+            <input type="radio" name="color" id="Gold">Gold 
+            <input type="radio" name="color" id="White">White
+            <br>
+
+            <label for="size">Screen Size</label>
+            <input type="radio" name="size" id="size1">12.5"
+            <input type="radio" name="size" id="size2">14"
+            <input type="radio" name="size" id="size3">15.6"
+            <input type="radio" name="size" id="size4">17.2"
+            <br>
+
+            <label for="graphics">With Graphics Card</label>
+            <input type="radio" name="graphics" id="graphics_y">Yes
+            <input type="radio" name="graphics" id="graphics_n">No
+            <br>
+
+            <label for="processor">Processor</label>
+            <input type="radio" name="processor" id="i5">intel i5
+            <input type="radio" name="processor" id="i7">intel i7
+            <input type="radio" name="processor" id="ryzen">Ryzen
+            <br>
+        </fieldset>
+    </div>
+    <div class="submit">
+        <input type="submit" value="Submit">
+    </div>  
+    </form>
+</body>
+<script>
+    function updateBudget(val){
+        document.getElementById("budgetInput").value= "Rs." + val;
+    }
+</script>
+</html>
