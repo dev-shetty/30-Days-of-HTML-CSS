@@ -1,0 +1,13 @@
+/* Day 4 - Just played around with random CSS */
+
+
+.center{
+    margin: auto;
+    border: 5px solid navy;
+    text-align: center;
+    font-size: 10vw;
+    font-family:'Times New Roman';
+    color: royalblue;
+    background-color:skyblue;
+    width: 75vw;
+}
