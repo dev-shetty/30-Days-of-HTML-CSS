@@ -1,11 +1,80 @@
 /* Following FreeCodeCamp CSS Tutorial */
 
-.title{
+h2{
     color: red;
 }
+/* ID has more importance than class */
+/* Order: element-selector < Class < IDs < Inline CSS */
 .subtitle{
     color: blue;
 }
-#contact-us{
+#services{
     color: green;
 }
+
+/* Pseudo-Selectors */
+h2:hover{
+    color:yellow;
+}
+/* Child Pseudo Selectors */
+li:first-child{
+    color: steelblue;
+}
+li:last-child{
+    color: aquamarine;
+}
+li:nth-child(2){            /* Every 2nd Child */
+    color: brown;
+}
+h3:only-child{              /* Parent with only 1 child if any parent has more than one child it wont get applied*/
+    color: violet;
+}
+
+/* Pseudo-Selectors for Anchor (<a>) tag */
+#link:link{             /* Unvisited Link */
+    color: brown;
+}
+#link:visited{
+    color: goldenrod;
+}
+
+/* Advanced Selectors - 2 types*/
+/* 1) Basic Advanced Selectors */
+
+h2 + a {  
+                        /* Adjacent Sibling Selector - Every a tag which follows a h2 directly */
+    color: greenyellow;
+}
+
+textarea ~ button{
+                        /* General Sibling Selector - for elements that directly go after one another they should have same parent */
+    color: purple;
+}
+
+ul > li{
+                        /* Child Selector - Every Direct Child inside the parent*/
+    font-size: 25px;
+}
+
+ul h3{
+                        /* Descedant Selector - Affects all the child inside the parent*/
+    background-color: darkblue;
+}
+
+/* 2) Attribute Selectors */
+/* Syntax: h2[attr=value]{} - Changes the style for the particular attribute */
+h2[class=subtitle]{
+    color:gold;
+}
+
+img[src^="https://source.unsplash.com"]{
+/* Selects all the src which starts with the above line     (^ - starts with) ($ - ends with) (* - contains anywhere) */
+    border: 10px solid palegoldenrod;
+}
+
+h2[class~=article-subtitle]{
+    /* Selects the another class mentioned with the first class which means seperated by white space*/
+    /* (|= is used to find the value either in middle or bounded with -) */
+    background-color: chocolate;
+}
+

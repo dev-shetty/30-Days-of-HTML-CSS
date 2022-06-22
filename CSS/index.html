@@ -1,5 +1,7 @@
 <!-- Following FreeCodeCamp CSS Tutorial -->
 <!-- Day 5 - Finished till: 31:37 and using class and IDs-->
+<!-- Day 6 - Finished till: 1:17:42 CSS selectors and Pseudo-Selectors-->
+
 
  <!DOCTYPE html>
  <html lang="en">
@@ -15,7 +17,7 @@
 
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sapiente accusamus labore nulla, corporis sit quibusdam similique quisquam. Facere tenetur expedita a asperiores alias unde delectus atque facilis laudantium quam.</p>
 
-      <h2 class="subtitle">About Me</h2>
+      <h2 class="subtitle article-subtitle">About Me</h2>
 
       <img src="https://source.unsplash.com/random/500x500" alt="Unsplash Random">
 
@@ -30,7 +32,10 @@
       </ul>
     </p>
 
-    <h2>Services</h2>
+    <h2 class="subtitle" id="services" style="color: orange;">Services</h2>
+    <!-- Shows Orange because inline CSS has higher priority -->
+    <a href="#">A link</a><br>
+    <a href="https://www.google.com" id="link">Click here to go to Google</a><br><br>
 
     <table border="1">
         <thead>
@@ -62,7 +67,10 @@
         <input type="text" name="name" id="name" placeholder="Fullname">
         <input type="text" name="email" id="email" placeholder="Email">
         <textarea></textarea>
-        <input type="button" value="Submit">
+        <button>Submit</button>
     </form>
+    <ul>
+        <h3>Thank You</h3>
+    </ul>
  </body>
  </html>
