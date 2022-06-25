@@ -1,0 +1,36 @@
+.container-item{
+    background-color: rgb(36, 130, 39);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    width:70px;
+    line-height: 50px;
+    margin:10px;
+}
+
+.container1{
+    display: flex;
+    background-color: aquamarine;
+    margin: 10px;
+    
+    /* Flex Direction: row(default) or 
+            column 
+            row-reverse 
+            column-reverse*/
+    flex-direction: row;
+
+    /* flex-wrap: wrap <-- (to avoid overflowing) 
+            nowrap (default) <-- (to not let it go to next line) 
+            wrap-reverse <-- (instead of below it will go above) */
+    flex-wrap: wrap;
+}
+
+.container2{
+    display: flex;
+    background-color: limegreen;
+    margin: 10px;
+    height: 300px;
+
+    /* Horizontal alignment */
+    justify-content: center;
+}

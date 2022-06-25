@@ -1,0 +1,84 @@
+body{
+    background: rgb(204, 229, 255);
+}
+
+#title{
+    color: orangered;
+}
+.subtitle{
+    color: orange;
+}
+
+/* Gradients */
+.gradient1, .gradient2, .gradient3, .gradient4{
+    height:600px;
+    width:800px;
+}
+
+.gradient1{
+    /* Durections: Top right bottom left also can combine 2 direction for corner */
+    background:linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+
+}
+.gradient2{
+    /* Making a fading color from opacity 1 to 0 */
+    background: linear-gradient(to right, limegreen, rgba(50, 205, 50, 0));
+}
+.gradient3{
+    /* Can also use angles */
+    background: linear-gradient(30deg, orangered, rgba(255, 68, 0, 0))
+}
+.gradient4{
+    /* We can also specify circle by default its ellipse */
+    background:radial-gradient(red 20%, green 40%, blue 55%);
+}
+
+/* Types of Units */
+/*  ######## Absolute Values ######## 
+    px <-- Absolute and isnt responsive constant for all size
+
+    *****Font Sizes*****
+    cm mm inch <-- real values in real life too
+    pt <-- little bigger than pixel
+    pc <-- 12pt 
+
+    ######## Relative Values ######## 
+    %  <-- Changes with screen size and is responsive ie. x% screen size.
+    Viewport - dimenstion of what we are viewing 
+    1vh = 1% height of total screen (the main screen size)
+    1vw = 1% width of total screen
+    NOTE: we can use more than 100 vw and vh.
+
+    *****Font Sizes*****
+    em <-- scales according to the standard font size
+    If, font size = f => 2em = 2f.
+
+    */
+
+
+    /* ####### Text Manipulation ####### */
+.link{
+    text-decoration: underline; 
+    /* overline, underline, line-through, none */
+}
+p{
+    text-transform: capitalize;
+    /* uppercase, lowercase and capitalize */
+
+    text-align: justify;
+    /* center, left, right, justify */
+}
+
+/* CSS Box-Model */
+#image{
+    height: 300px;
+    width: 40%;
+    border: 10px solid red;
+    padding: 2% 2%;
+    /* Top&Bottom Left&Right */
+    margin: 0 0 0 2%; 
+    /* Top Right Bottom Left */
+
+    /* Float property */
+    float: right;
+}
