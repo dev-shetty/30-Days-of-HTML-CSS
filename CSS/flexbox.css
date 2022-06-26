@@ -27,10 +27,91 @@
 
 .container2{
     display: flex;
-    background-color: limegreen;
+    background-color: gainsboro;
     margin: 10px;
     height: 300px;
 
     /* Horizontal alignment */
     justify-content: center;
+    /*  center, 
+        flex-end, 
+        flex-start,
+        space-between <-- Adds space between flex items equally,
+        space-around <-- space between and also in start and end,
+        space-evenly <-- Same space in between start and end.
+        */
+
+
+    /* Vertical alignment */
+    align-items: center;
+    /*  center
+        strech(top to bottom), 
+        flex-start(to the top), 
+        flex-end(to the bottom),
+        baseline(all of them will be in same line regardless of the size of each element) */
+
+        /* display: flex; justify-content: center; align-items: center <-- these 3 centers the element in the page */
+}
+
+    /* ####### Flex item order ####### */
+
+.container3{
+    /* Setting order of the elements inside container */
+    display: flex;
+    background-color: seashell;
+    margin: 10px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    /* Inside elements <-- order: 0(default), number; */
+}
+
+    /* ####### Grow, Shrink and Basis ####### */
+.container4{
+    display: flex;
+    background-color: lightcyan;
+    margin: 10px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+
+    /* flex-basis: size;<-- determines the minimum width of the item */
+    
+
+    /* flex-grow: number;<-- gives all of items the same space and fits the unused space (deafult 0)
+    Can change each element value to give them more space
+    
+    number(x) <-- grows x times than others*/
+    /* 0 <-- means doesnt grow */
+    
+
+    /* flex-shrink: number;<-- defines the rate of shrinkage of each item when page is resized (default 1)
+    
+    0 <-- removes the shrinkage so it will be the same size irrespective of change in page dimension
+    number(x) - it shrinks x times than others */
+    /* 1 means shrink same like everyone */
+}
+.container5{
+    display: flex;
+    background-color: lightblue;
+    margin: 10px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+
+    /* flex shorthand property */
+    /* flex: grow shrink basis; */
+}
+
+.container6{
+    display: flex;
+    background-color: lightblue;
+    margin: 10px;
+    height: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /*  Align each item using align-self*/
+    /*  center, flex-start, flex-end
+        (strech and baseline doesnt work on items) */
 }
