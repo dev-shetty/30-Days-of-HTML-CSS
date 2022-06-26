@@ -1,0 +1,58 @@
+.container1, .container2{
+    width: 200px;
+    border: 2px solid red;
+    aspect-ratio: 1;
+    background-color: black;
+
+}
+.container1{
+    position: absolute;
+    top:50%;
+    left:50%;
+    animation-name: translate-element2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    /* to app;y styles */
+    
+    animation-delay: 500ms;
+    /* We can use both positive and negative value for the delay */
+    
+    animation-iteration-count: 2;
+    /* Tells how many times it loops over 
+    infinite <-- goes over and over forever*/
+
+    animation-direction: reverse;
+    /* normal, reverse, alternate, alternate-reverse */
+}
+
+.container2{
+    /* ###### Shorthand property ###### */
+    animation: translate-element 4s linear 0s 2 normal;
+    -webkit-animation: translate-element 4s linear 0s 2 normal;
+    -moz-animation: translate-element 4s linear 0s 2 normal;
+    -o-animation: translate-element 4s linear 0s 2 normal;
+
+    /* animation-name   duration   timing-function    delay      interation-count    direction*/
+}
+
+
+/* Defining an animation */
+@keyframes translate-element {
+    /* Any name can be given (here: translate-element) */
+    from {background: black;}   /* Start */
+    to {background: red;}      /* End */
+}
+
+/* **OR** */
+
+@keyframes translate-element2 {
+    /* We can also add percentages */
+    /* We can add more than one properties also */
+
+    0% {background: black; 
+        transform: scale(1);}
+    50% {background: yellow;
+        transform: scale(3);}
+    100% {background: red; 
+        transform: scale(1);}
+}

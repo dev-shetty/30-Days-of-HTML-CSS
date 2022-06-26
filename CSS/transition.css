@@ -1,0 +1,67 @@
+.submit-button{
+    margin: 20px 10px;
+    padding: 10px 15px;
+    border: none;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.567);
+    
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    /* affected-property time(duration of transition) transition-property delay(x time after hovering)*/
+    /* transition-property:
+                        ease, ease-in, ease-out
+                        ease-in-out
+                        linear */
+    /* all <-- applys all the properties when hover(or other) */
+
+
+    /*  Browser support prefix
+    -webkit- <-- Chrome and Safari
+    -moz- <-- Mozilla Firefox
+    -o- <-- Opera 
+    Because some browsers don't support transition so it will change according to the requirements */
+}
+
+.submit-button:hover{
+    color: black;
+    background-color: rgba(0, 0, 255, 0.201);
+    padding: 20px 30px;
+
+}
+
+
+/* ####### Transform Functions ####### */
+.submit-button:hover{
+
+    /* Transform also works with base property (here .submit-button) so we can have some cool designs */
+    transform: translate(50px, 30px);
+    /* x-shift, y-shift */
+
+    transform: scale(2.5);
+    /* Scales everything up by 2.5x */
+
+    transform: rotate(360deg);
+    /* Rotates it by 360deg */
+
+    /* transform: skewX(45deg); */
+    /* Rotates in X-axis rather than from center */
+
+    /* transform: skewY(45deg); */
+    /* Rotates in Y-axis rather than from center */
+
+    /* NOTE: really weird(skew) ^^ */
+
+
+    /* transform: matrix(1, 0.45, 0.45, 1, 100, 50); */
+    /* scale-X skewY skewX scale-Y translate-X translate-Y*/
+    /* 0.45 <-- 45deg */
+    /* Summarzies everything in one function */
+}
+
+    
+
