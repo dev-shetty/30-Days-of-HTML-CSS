@@ -1,0 +1,82 @@
+.grid-item{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    width: 70px;
+    line-height: 40px;
+    margin: 10px;
+}
+
+/* Template rows and columns */
+.grid-container1{
+    display: grid;
+    background-color: whitesmoke;
+    margin: 10px;
+    height: 300px;
+    grid-template-columns: auto auto auto;
+    /* First column-size, Second-column-size, Third column-size */
+    /* auto Divide the space evenly */
+    grid-template-rows: auto auto;
+}
+
+/* Justify and Align Grid */
+.grid-container2{
+    display: grid;
+    background-color: whitesmoke;
+    margin: 10px;
+    height: 500px;
+
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+    /* start, end, center, space-around, space-evenly */
+    align-content: center;
+    /* space-between, space-around, space-evenly, center, start, end */
+}
+
+/* Row and Column Gap */
+.grid-container3{
+
+    /* NOTE: grid-row-gap, grid-column-gap, grid-gap are obselete and has been replaced by row-gap, column-gap, gap.....the tutorial is old so it shows the old one */
+
+
+    display: grid;
+    background-color: whitesmoke;
+    margin: 10px;
+    height: 500px;
+    grid-template-columns: auto auto auto;
+    /* grid-column-gap */
+    column-gap: 150px; 
+
+    grid-template-rows: auto auto;
+    /* grid-row-gap */
+    row-gap: 150px;
+
+    /* Shorthand property */
+    /* gap: 100px 100px; */
+    /* row column */
+}
+
+/* Column and Row Lines */
+.grid-container4{
+    display: grid;
+    background-color: whitesmoke;
+    margin: 10px;
+    height: 500px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+
+    /* grid-column: start-point / end-point */
+    /* grid-row: start-point / end-point */
+    /* span - the amount of space you want to take */
+}
+
+/* Grid Area */
+.grid-container5{
+    display: grid;
+    background-color: whitesmoke;
+    margin: 10px;
+    height: 500px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}

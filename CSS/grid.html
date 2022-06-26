@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <title>Grid Layout</title>
+</head>
+<body>
+    <h3>Template rows and columns</h3>
+    <div class="grid-container1">
+        <div class="grid-item" style="background: red;">1</div>
+        <div class="grid-item" style="background: blue;">2</div>
+        <div class="grid-item" style="background: green;">3</div>
+        <div class="grid-item" style="background: yellow;">4</div>
+        <div class="grid-item" style="background: orange;">5</div>
+        <div class="grid-item" style="background: purple;">6</div>
+
+    </div>
+    <h3>Justify and Align grids</h3>
+    <div class="grid-container2">
+        <div class="grid-item" style="background: red;">1</div>
+        <div class="grid-item" style="background: blue;">2</div>
+        <div class="grid-item" style="background: green;">3</div>
+        <div class="grid-item" style="background: yellow;">4</div>
+        <div class="grid-item" style="background: orange;">5</div>
+        <div class="grid-item" style="background: purple;">6</div>
+    </div>
+    <h3>Row and Column Gap</h3>
+    <div class="grid-container3">
+        <div class="grid-item" style="background: red;">1</div>
+        <div class="grid-item" style="background: blue;">2</div>
+        <div class="grid-item" style="background: green;">3</div>
+        <div class="grid-item" style="background: yellow;">4</div>
+        <div class="grid-item" style="background: orange;">5</div>
+        <div class="grid-item" style="background: purple;">6</div>
+    </div>
+    <h3>Column and Row Lines</h3>
+    <div class="grid-container4">
+        <!-- grid-column: start-point / end-point -->
+        <!-- row-column: start-point / end-point -->
+        <!-- span - the amount of space you want to take -->
+        <div class="grid-item" style="background: red; grid-column: 1 / span 3;
+        grid-row: 2 / span 2;">1</div>
+        <div class="grid-item" style="background: blue;">2</div>
+        <div class="grid-item" style="background: green;">3</div>
+        <div class="grid-item" style="background: yellow;">4</div>
+        <div class="grid-item" style="background: orange;">5</div>
+        <div class="grid-item" style="background: purple;">6</div>
+    </div>
+    <h3>Grid Area</h3>
+    <p> Basically Shorthand for above column and row lines</p>
+    <div class="grid-container5">
+        <!-- grid-area: row-start / column-start / row-end / column-end-->
+        <div class="grid-item" style="background: red; grid-area: 2 / 1 / span 2 / span 3;">1</div>
+        <!-- Same as above -->
+        <div class="grid-item" style="background: blue;">2</div>
+        <div class="grid-item" style="background: green;">3</div>
+        <div class="grid-item" style="background: yellow;">4</div>
+        <div class="grid-item" style="background: orange;">5</div>
+        <div class="grid-item" style="background: purple;">6</div>
+    </div>
+</body>
+</html>
