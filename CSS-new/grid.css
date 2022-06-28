@@ -1,0 +1,104 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /* column-gap: 1em; Works as margin in between columns */
+    /* row-gap: 1em; Works as margin between rows */
+    
+    gap: 1em; /* Shorthand for both column and row gap if same */
+}
+
+.wrapper > div{
+    background-color: lightcyan;
+    padding: 1em;
+}
+.wrapper > div:nth-child(odd){
+    background-color: aqua;
+}
+
+.new-wrapper{
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* fr <-- Fractions spilts according to the coefficient equally (better & recommended) */
+
+    /* grid-template-columns: repeat(12, 1fr);
+     ^^ if we have to divide many columns with same fraction unit instead of typing 1 fr 12 times */
+
+    /* grid-template-columns: repeat(3, 1fr  2fr);
+     it repeats 1fr and 2fr alternatively....3 times*/
+
+     gap: 1em;
+
+     /* grid-auto-rows: 100px; Rowsize 100px */
+     grid-auto-rows: minmax(100px, auto);
+     /* ^^ Streches out if content overflows */
+}
+
+.new-wrapper > div{
+    background-color: lightgoldenrodyellow;
+    padding: 1em;
+}
+
+.new-wrapper > div:nth-child(odd){
+    background-color: goldenrod;
+}
+
+/* Nesting grids */
+.nested-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    grid-auto-rows: 100px;
+}
+
+.nested-wrapper > div{
+    border: 1px solid gold;
+    text-align: center;
+    padding: 1em;
+    background-color: lightyellow;
+}
+
+.nested-wrapper > div:nth-child(even){
+    background-color: gold;
+}
+
+
+.new-new-wrapper{
+    display: grid;
+    margin-top: 5em;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1em;
+    justify-items: stretch;     /* Default */
+    align-items: stretch;       /* Default */
+}
+.new-new-wrapper > div{
+    background-color: lime;
+    padding: 1em;
+}
+.new-new-wrapper > div:nth-child(odd){
+    background-color: limegreen;
+}
+
+.box1{
+    /* align-self: start;        /* for single child alignment */ 
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    /* Takes the area 2 column and 2 rows */
+}
+.box2{
+    /* align-self: end; */
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+.box3{
+    /* justify-self: end; */
+    grid-column: 2 / 4;
+    grid-row: 3;
+}
+.box4{
+    /* justify-self: start; */
+    grid-column: 1;
+    grid-row: 2 / 4;
+    /* ^^ Overlapping boxes */
+}

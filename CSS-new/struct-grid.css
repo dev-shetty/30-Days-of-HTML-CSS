@@ -1,0 +1,26 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.5fr 0.4fr 4fr 0.5fr;
+    gap: 1em;
+    min-height: calc(100vh - 1em);
+    background-color: rgba(50, 205, 50, 0.327);
+    text-align: center;
+}
+.wrapper > div{
+    background-color: rgba(50, 205, 50, 0.327);
+}
+.header, .footer, .nav-bar{
+    grid-column: 1 / 4;
+}
+.left-sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding:1em;
+}
+.left-sidebar > div{
+    background-color: rgba(50, 205, 50, 0.327);
+    height: 5vh;
+    width: 100%;
+}
