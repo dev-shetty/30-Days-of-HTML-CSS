@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.element{
+    outline:2px solid red;
+    width: 5rem;
+    height: 5rem;
+}
+.container{
+    margin: 2%;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap:6px;
+    /* outline: 5px solid green; */
+    height: 100%;
+    width: 80rem;
+}
+.lanthanoid,
+.actinoid{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    width: 82rem;
+    margin-left: 10%;
+    margin-top: 6px;
+}
+.element1{
+    grid-column: 1/ 18;
+}
+.element4{
+    grid-column: 2/13;
+}
+.element12{
+    grid-column: 2/13;
+}
+span{
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    text-align: center;
+    font-size: 13px;
+}
+p:hover{
+    font-size: 20px;
+}
