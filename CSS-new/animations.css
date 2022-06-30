@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width:750px;
+    margin: 2% auto;
+    background-color:bisque;
+}
+
+.parent-container{
+    background-color:tomato;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-wave:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+}
+
+.container-wave:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.box-wave,
+.box-spin,
+.box-linear,
+.boxed-box,
+.zoom-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    background: greenyellow;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.container-wave:nth-of-type(1) .box-wave:nth-of-type(1){
+    animation-name: wave;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.container-wave:nth-of-type(1) .box-wave:nth-of-type(2){
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.container-wave:nth-of-type(1) .box-wave:nth-of-type(3){
+    animation-name: wave;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.container-wave:nth-of-type(1) .box-wave:nth-of-type(4){
+    animation-name: wave;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+}
+
+.container-wave:nth-of-type(2) .box-wave:nth-of-type(1){
+    animation-name: wave;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+}
+.container-wave:nth-of-type(2) .box-wave:nth-of-type(2){
+    animation-name: wave;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.container-wave:nth-of-type(2) .box-wave:nth-of-type(3){
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.container-wave:nth-of-type(2) .box-wave:nth-of-type(4){
+    animation-name: wave;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+.container-spin{
+    display: flex;
+    justify-content: space-around;
+    background-color: teal;
+    padding: 20px;
+}
+
+.box-spin:nth-of-type(1){
+    animation-name: clockwise-spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite
+}
+.box-spin:nth-of-type(2){
+    animation-name: anti-clockwise-spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite
+}
+
+.container-linear{
+    display: flex;
+    flex-direction: column;
+    background-color: sandybrown;
+    padding: 20px;
+}
+
+.box-linear:nth-of-type(1){
+    animation-name: left-to-right;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.box-linear:nth-of-type(2){
+    align-self: flex-end;
+    animation-name: right-to-left;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.container-square{
+    position: relative;
+    background-color:chocolate;
+    height: 400px;
+    padding: 20px;
+}
+.boxed-box{
+    position: relative;
+    margin-left: 27%;
+    animation-name: boxed;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.container-zoom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+    height: 300px;
+    padding: 20px;
+}
+.zoom-box:nth-of-type(1){
+    animation-name: zoom-in;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.zoom-box:nth-of-type(2){
+    animation-name: zoom-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wave {
+    0%{width: 100px;}
+    50%{width: 300px;}
+}
+@keyframes clockwise-spin {
+    to{transform: rotate(360deg);}
+}
+@keyframes anti-clockwise-spin {
+    to{transform: rotate(-360deg);}
+}
+@keyframes left-to-right {
+    50%{transform: translateX(580px);}
+}
+@keyframes right-to-left {
+    50%{transform: translateX(-580px);}
+}
+@keyframes boxed {
+    0%{top:0; left:0;}
+    25%{top:0; left:200px;}
+    50%{top:200px; left:200px;}
+    75%{top: 200px; left:0}
+    100%{top:0; left:0}
+}
+@keyframes zoom-in {
+    50%{transform: scale(2);}
+    100%{transform: scale(1);}
+}
+@keyframes zoom-out {
+    50%{transform: scale(0.5);}
+    100%{transform: scale(1);}
+}
