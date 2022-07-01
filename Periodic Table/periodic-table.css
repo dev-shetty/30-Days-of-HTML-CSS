@@ -3,10 +3,29 @@
     padding: 0;
     margin: 0;
 }
-.element{
-    outline:2px solid red;
-    width: 5rem;
-    height: 5rem;
+#Header{
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    color: steelblue;
+    margin-top: 1%;
+    display: inline-block;
+    left: 30%;
+}
+#Header::after, #Header::before{
+    content: "";
+    background-color: steelblue;
+    width:100%;
+    position: absolute;
+    height: 2px;
+}
+#Header::after{
+    bottom: 0;
+    left: 25%;
+}
+#Header::before{
+    top: 0;
+    right: 25%;
 }
 .container{
     margin: 2%;
@@ -17,13 +36,26 @@
     height: 100%;
     width: 80rem;
 }
+.element{
+    outline:2px solid red;
+    width: 5rem;
+    height: 5rem;
+}
 .lanthanoid,
 .actinoid{
     display: grid;
     grid-template-columns: repeat(15, 1fr);
-    width: 82rem;
+    width: 85rem;
     margin-left: 10%;
     margin-top: 6px;
+}
+.lanthanoid .series,
+.actinoid .series{
+    width: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
 }
 .element1{
     grid-column: 1/ 18;
@@ -44,6 +76,99 @@ p{
     text-align: center;
     font-size: 13px;
 }
-p:hover{
-    font-size: 20px;
+
+.lanthanoid .element{
+    background-color: #E6EE9B;
+}
+.actinoid .element{
+    background-color: #B3E5FC;
+}
+/* Transition Metals */
+.container .element{
+    background-color: #D0C4E8;
+}
+
+/* Last Column - Noble Gas */
+.container .element2,
+.container .element10,
+.container .element18,
+.container .element36,
+.container .element54,
+.container .element86,
+.container .element118{
+    background-color: whitesmoke;
+}
+
+/* Other Non-metals */
+.container .element1,
+.container .element5,
+.container .element6,
+.container .element7,
+.container .element8,
+.container .element14,
+.container .element15,
+.container .element16,
+.container .element33,
+.container .element34,
+.container .element52{
+    background-color: #FFAB91;
+}
+
+/* Column-17 Halogens */
+.container .element9,
+.container .element17,
+.container .element35,
+.container .element53,
+.container .element85,
+.container .element117{
+    background-color: #A5D6A7;
+}
+
+/* Actinoid Elements */
+.container .element89{
+    background-color: #B3E5FC;
+}
+
+/* Rare-Earth Elements */
+.container .element21,
+.container .element39,
+.container .element57{
+    background-color: #E6EE9B;
+}
+
+/* Alkaline-Earth Metals */
+.container .element4,
+.container .element12,
+.container .element20,
+.container .element38,
+.container .element56,
+.container .element88{
+    background-color: #FFCC80;
+}
+
+/* Other Metals */
+.container .element13,
+.container .element31,
+.container .element32,
+.container .element49,
+.container .element50,
+.container .element51,
+.container .element81,
+.container .element82,
+.container .element83,
+.container .element84,
+.container .element113,
+.container .element114,
+.container .element115,
+.container .element116{
+    background-color: #FFCDD2;
+}
+
+.container .element3,
+.container .element11,
+.container .element19,
+.container .element37,
+.container .element55,
+.container .element87{
+    background-color: #FFE0B2;
 }
