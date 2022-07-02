@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* background-color: r  gba(50, 205, 50, 0.218); */
+    scroll-behavior: smooth;
 }
 
 body{
@@ -106,6 +106,8 @@ p{
 .integration-image{
     float: left;
     margin-inline: 5% 2%;
+    margin-bottom: 2%;
+    width: 50%;
 }
 .sardar-image img{
     float: right;
@@ -141,8 +143,16 @@ footer li{
 .author li a{
     color: black;
 }
-.author li a:hover{
-    color: white;
+#arrow{
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+    text-decoration: none;
+    color: black;
+    filter: drop-shadow(2px 4px 3px rgba(128, 128, 128, 0.579));
+}
+#arrow:hover{
+    color: gray;
 }
 @media (max-width:800px){
     body{
@@ -165,5 +175,11 @@ footer li{
     }
     .author li:not(:first-child){
         padding-inline: 2%;
+    }
+    #arrow{
+        right: 0;
+    }
+    .integration-image{
+        width: 90%;
     }
 }
