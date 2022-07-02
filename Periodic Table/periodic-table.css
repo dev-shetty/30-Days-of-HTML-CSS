@@ -28,13 +28,12 @@
     right: 25%;
 }
 .container{
-    margin: 2%;
+    margin: 2% auto;
     display: grid;
     grid-template-columns: repeat(18, 1fr);
     gap:6px;
-    /* outline: 5px solid green; */
     height: 100%;
-    width: 80rem;
+    width: 98rem;
 }
 .element{
     outline:2px solid red;
@@ -46,7 +45,7 @@
     display: grid;
     grid-template-columns: repeat(15, 1fr);
     width: 85rem;
-    margin-left: 10%;
+    margin-left: 12%;
     margin-top: 6px;
 }
 .lanthanoid .series,
@@ -171,4 +170,33 @@ p{
 .container .element55,
 .container .element87{
     background-color: #FFE0B2;
+}
+
+footer{
+    margin-inline: auto;
+    margin-top: 2%;
+    background-color: rgba(50, 205, 50, 0.662);
+    height: 80px;
+    display: grid;
+    padding-inline: 2%;
+    place-content: center;
+    grid-template-columns: 1fr 25%;
+    list-style: none;
+    width: 98rem;
+}
+footer li{
+    font-size: 26px;
+}
+.author{
+    display: flex;
+    justify-content: flex-end;
+}
+.author li:not(:first-child){
+    margin-left: 2%;
+}
+.author li a{
+    color: black;
+}
+.author li a:hover{
+    color: white;
 }
