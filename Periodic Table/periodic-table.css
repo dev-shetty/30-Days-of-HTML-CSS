@@ -8,14 +8,12 @@
     text-align: center;
     font-size: 3rem;
     color: steelblue;
-    margin-top: 1%;
-    display: inline-block;
-    left: 30%;
+    margin: 1% auto;
 }
 #Header::after, #Header::before{
     content: "";
     background-color: steelblue;
-    width:100%;
+    width: 50%;
     position: absolute;
     height: 2px;
 }
@@ -28,7 +26,8 @@
     right: 25%;
 }
 .container{
-    margin: 2% auto;
+    margin: 0 auto;
+    margin-bottom: 1.5%;
     display: grid;
     grid-template-columns: repeat(18, 1fr);
     gap:6px;
@@ -36,7 +35,7 @@
     width: 98rem;
 }
 .element{
-    outline:2px solid red;
+    outline:2px solid black;
     width: 5rem;
     height: 5rem;
 }
@@ -45,8 +44,8 @@
     display: grid;
     grid-template-columns: repeat(15, 1fr);
     width: 85rem;
-    margin-left: 12%;
-    margin-top: 6px;
+    margin-left: 12% ;
+    margin: 6px auto;
 }
 .lanthanoid .series,
 .actinoid .series{
