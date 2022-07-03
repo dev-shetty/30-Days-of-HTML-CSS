@@ -5,20 +5,28 @@
 }
 body{
     font-family: 'Lato', sans-serif;
+    background: linear-gradient(45deg, blue, limegreen, royalblue);
 }
 .container{
+    background-color: white;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    outline: 2px solid black;
+    outline: 4px solid black;
+    box-shadow: 2em 2em 1em rgba(0, 0, 0, 0.6);
     width: 80%;
     margin: 2% auto;
+    max-width: 1300px;
 }
 header{
     font-family: 'Finlandica', sans-serif;
     grid-column: 1 / 5;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin-bottom: 1%;
+}
+.fa-bullhorn{
+    margin-top: 2%;
+    color: red;
 }
 .title-box{
     outline: 1px solid black;
@@ -67,22 +75,24 @@ main{
     font-weight: 600;
     text-transform: uppercase;
     padding-inline: 5%;
-
 }
 .news-content{
+    padding: 3%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2%;
 }
 .news-content p{
     text-align: justify;
-    padding: 5%;
+    padding: 1%;
+    margin-bottom: 2%;
 }
 aside{
     display: grid;
     grid-template-rows: 30% 300px 1fr;
     font-size: 12px;
     overflow: hidden;
+    border-left: 2px solid black;
 }
 .side-headlines{
     font-size: 1.8em;
@@ -90,15 +100,14 @@ aside{
     padding-left: 2%;
 }
 .side-content1{
-    background-color: rgba(127, 255, 212, 0.700);
     padding: 2%;
 }
 .side-content2{
-    background-color:rgba(218, 165, 32, 0.700);
+    border-top: 2px solid black;
     padding: 2%;
 }
 .side-content3{
-    background-color: rgba(255, 20, 145, 0.700);
+    border-top: 2px solid black;
 }
 .side-headlines1-image{
     margin: 2%;
@@ -113,22 +122,58 @@ aside{
     margin: 2% 5%;
     height: 35%;
 }
-.last-content{
+.end-of-page{
     grid-column: 1 / 5;
-    background-color: rgba(255, 127, 80, 0.700);
+    background-color: rgba(255, 140, 0, 0.700);
+    border-top: 2px solid black;
+    padding: 2%;
 }
 .last-headlines{
     font-size: 2.5em;
     font-weight: 600;
     text-transform: uppercase;
-    padding-inline: 5%;
 }
 .last-content-image{
+    width: 300px;
     float: right;
+    margin: 2%;
 }
-@media (max-width:800px) {
+.last-content{
+    margin-block-start: 2%;
+}
+footer{
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    list-style: none;
+    height: 70px;
+    place-content: center;
+    background-color: rgba(0, 0, 128, 0.5);
+    font-size: 1.3em;
+}
+footer .author{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+footer .author a{
+    text-decoration: none;
+    color: black;
+}
+footer .author a:hover{
+    color: white;
+}
+footer > li:first-child{
+    margin: auto 0;
+    font-size: 1.5em;
+    padding-left: 15%;
+}
+@media (max-width:1000px) {
     .container{
         width: 90%;
+    }
+    header{
+        font-size: 2.2em;
     }
     .title-box img{
         width: 90%;
