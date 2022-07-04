@@ -4,33 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/34b3acab4e.js" crossorigin="anonymous"></script>
-    <title>Hotel Dev-licious</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="order.css">
+    <title>Order Now</title>
 </head>
 <body>
+    <header>
+        <h1>Order Now!!</h1>
+    </header>
     <nav>
-        <ul>
-            <li>
-                <div class="logo">
-                    <img src="./Assets/Logo.png" alt="Dev-licious Logo">
-                    <h2>Dev-licious</h2>
-                </div>
-            </li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#Menu">Menu</a></li>
-            <li><a href="order.html">Order</a></li>
-            <li  class="search-box">
-                <input type="search" name="search-box" id="search-box" placeholder="Search">
-                <p><a href="#Search"><i class="fa-solid fa-search"></i></a></p>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <li  class="search-box">
+            <input type="search" name="search-box" id="search-box" placeholder="Search">
+            <p><a href="#Search"><i class="fa-solid fa-search"></i></a></p>
+        </li>
     </nav>
-    <div class="hero-section">
-        <img src="./Assets/Logo.png" alt="Dev-licious Logo">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis necessitatibus dolorum eum doloribus quam asperiores iusto voluptates cum et praesentium autem nemo laudantium dolorem possimus error rerum accusantium, vel beatae id cumque qui minus quo. Voluptatem vitae eos neque ullam in iusto totam, rem ipsa quidem! Perspiciatis nobis maiores quidem!</p>
-    </div>
     <main>
         <div class="container">
             <div class="item">
@@ -89,57 +77,45 @@
                     </div>
                 </div>
             </div>
-            <button id="view-more"><a href="#Menu">View More</a></button>
         </div>
     </main>
     <aside>
-        <header>
-            Cuisines
-        </header>
-        <ol>
-            <li>Indian</li>
-            <ul>
-                <li>Gujarati</li>
-                <li>Punjabi</li>
-                <li>Mangalorean</li>
-                <li>South Indian</li>
-                <li>Bengali</li>
-                <li>Marathi</li>
-            </ul>
-            <li>Italian</li>
-            <ul>
-                <li>Pizza</li>
-                <li>Ravioli</li>
-                <li>Risotto</li>
-                <li>Spaghetti</li>
-            </ul>
-            <li>Mexican</li>
-            <ul>
-                <li>Tacos</li>
-                <li>Burritos</li>
-                <li>Quesadillas</li>
-                <li>Tostadas</li>
-            </ul>
-            <li>Japanese</li>
-            <ul>
-                <li>Sushi</li>
-                <li>Ramen</li>
-                <li>Sukiyaki</li>
-                <li>Takoyaki</li>
-            </ul>
-            <li>Korean</li>
-            <ul>
-                <li>Kimchi</li>
-                <li>Stew</li>
-            </ul>
-            <li>Continental</li>
-            <ul>
-                <li>French Toast</li>
-                <li>Pancakes</li>
-                <li>Caesar Salad</li>
-                <li>Hash Browns</li>
-            </ul>
-        </ol>
+        <h1 class="side-heading">Filter</h1>
+        <h2>Preferred Type</h2>
+        <div class="veg-or-nonveg">
+            <div>
+                <input type="radio" name="food-choice" id="veg">
+                <label for="veg">Pure Veg</label>
+            </div>
+            <div>
+                <input type="radio" name="food-choice" id="non-veg">
+                <label for="non-veg">Non Veg</label>
+            </div>
+            <div>
+                <input type="radio" name="food-choice" id="egg">
+                <label for="egg">Veg + Egg</label>
+            </div>
+        </div>
+        <h2>Type of Cuisine</h2>
+        <div class="filters-type-of-cuisine">
+            <div>
+                <input type="checkbox" name="Indian" id="cuisine">
+                <label for="Indian">Indian</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Italian" id="cuisine">
+                <label for="Italian">Italian</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Mexican" id="cuisine">
+                <label for="Mexican">Mexican</label>
+            </div>
+            <div>
+                <input type="checkbox" name="Continental" id="cuisine">
+                <label for="Continental">Continental</label>
+            </div>
+        </div>
+        <button id="apply-filter"><a href="#">Apply Filter</a></button>
     </aside>
 </body>
 </html>
