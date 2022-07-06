@@ -32,7 +32,10 @@ body {
     list-style: none;
     margin-bottom: 1.5em;
 }
-.fa-twitter {
+.left-side ul li:hover:not(:first-child, button) {
+    background-color: var(--off-background);
+}
+#main-logo {
     transform: scale(1.5);
     margin-top: 1em;
 }
@@ -107,6 +110,9 @@ body {
 .news-tab div {
     margin-bottom: 5%;
 }
+.news-tab div:hover {
+    background-color: var(--background-color);
+}
 .news-tab div p {
     line-height: 1;
 }
@@ -143,11 +149,13 @@ body {
     border-radius: 25px;
     padding-left: 5%;
 }
-
 .profile-suggestion-box {
     display: flex;
     align-items: center;
     margin-bottom: 5%;
+}
+.profile-suggestion-box:hover {
+    background-color: var(--background-color);
 }
 .profile-suggestions .heading {
     margin-bottom: 5%;
@@ -180,6 +188,7 @@ main {
     border-inline: 2px solid var(--line-color);
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 .whats-happening {
     display: flex;
@@ -246,19 +255,74 @@ main {
     border-bottom: 2px solid var(--line-color);
     text-align: center;
 }
-.feed-1 div{
+.feed {
+    height: 45vh;
+}
+.feed div,
+.feed-2 div {
     margin-top: 3%;
     display: flex;
 }
-.feed-1 div p {
+.feed div p ,
+.feed-2 div p {
     margin-left: 1%;
 }
-.feed-1 div .profile-picture {
+.feed div .profile-picture,
+.feed div .profile-picture {
     margin-inline: 3% 2%;
 }
-.feed-1 img {
+.feed img {
     float: left;
 }
+.feed-2 img {
+    margin-inline: 2.5%;
+}
 .tweet-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1%;
     margin-left: 12%;
+    font-size: 0.9em;
+    padding-right: 5%;
+}
+footer i {
+    transform: scale(1);    
+}
+footer p:nth-child(4),
+footer p:nth-child(5) {
+    color: var(--twitter-blue);
+}
+footer {
+    font-size: 0.9em;
+    margin-top: 4%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 12%;
+
+}
+.project-screenshot {
+    margin: none;
+    width: 80%;
+    margin-top: 3%;
+    border: 2px solid var(--line-color);
+}
+
+@media (max-width:1000px) {
+    .left-side {
+        display: none;
+    }
+    .right-side {
+        display: none;
+    }
+    main {
+        grid-column: 1 / 4;
+    }
+    body {
+        width: 100%;
+        font-size: 1em;
+    }
 }
