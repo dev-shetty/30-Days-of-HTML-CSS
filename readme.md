@@ -89,7 +89,7 @@ Started a new project which is a restaurant page.
 <br>
 
 > Twitter Frontend Clone
-<img src="/home/deveesh/100_Days_of_Code/Project-images/Twiitter-Clone.jpeg" width="500">
+<img src="Project-images/Twiitter-Clone.jpeg" width="500">
 
 <br>
 
