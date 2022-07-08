@@ -3,8 +3,11 @@
     padding: 0;
     margin: 0;
 }
-
+body {
+    background-color: #ef1f3eb7;
+}
 .container {
+    position: relative;
     width: 80%;
     margin-inline: auto;
     margin-top: 5%;
@@ -12,7 +15,7 @@
     min-height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    position: relative;
+    box-shadow: -2em 1em 1em #251e2050;
 }
 aside {
     position: relative;
@@ -26,6 +29,7 @@ aside {
     bottom: -10%;
     transform: rotateZ(-20deg);
     z-index: 1;
+    filter: drop-shadow(-2em 2em 2em #251E20);
 }
 .logo {
     width: 20%;
@@ -39,11 +43,14 @@ aside {
     left:50%;
     transform: translate(-50%);
     bottom: 0;
-    font-size: 15em;
+    font-size: 25em;
     letter-spacing: 50px;
     color: white;
     opacity: 0.3;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, sans-serif;
+}
+main {
+    background-color: white;
 }
 .content {
     margin: auto;
