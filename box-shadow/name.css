@@ -3,11 +3,17 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background: linear-gradient(to right,black, blue, navy, royalblue, navy, black);
+}
+/* body {
+    background: linear-gradient(to right,black, red, orangered, orange, orangered, red, black );
+} */
 .box {
     width: 20px;
     height: 20px;
     margin: auto;
-    box-shadow: 0px 20px black,
+    box-shadow: 0px 20px red,
                 20px 20px black,
                 -20px 20px black,
                 -40px 40px black,
@@ -322,11 +328,5 @@
                 50px 540px lightcyan,
                 -50px 540px lightcyan,
                 70px 560px lightcyan,
-                -70px 560px lightcyan,
-                
-                
-
-
-
-                500px 500px blue;
+                -70px 560px lightcyan
 }
