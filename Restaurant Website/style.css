@@ -112,7 +112,9 @@ aside{
     width: 60px;
     font-size: 1em;
 }
-
+aside {
+    margin-right: 2%;
+}
 aside header{
     font-size: 1.5em;
     text-align: center;
