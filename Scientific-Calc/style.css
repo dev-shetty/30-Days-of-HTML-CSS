@@ -1,0 +1,42 @@
+:root {
+    /* Variables */
+    --debug: 2px solid red;
+    --outer-calc-body: #1b1f28;
+    --middle-calc-body: #1e222d;
+    --calc-reflection: #525662;
+    --calc-screen: #d5ead9;
+    --btn-primary: #7b858f;
+    --btn-functions: #020206;
+    --btn-top-layer: #8d9ba4;
+    --btn-clear-func: #7eb558;
+    --alpha-key: #915777;
+    --shift-key: #aeaa63;
+    --body-text-color: #eff4f8;
+    --blue-key: #548e9a;
+    --button-text-color: #d7d6dc;
+    --solar-panel: #402d33;
+    --screen-text-color: #25288b; 
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.outer-body {
+    width:30%;
+    margin: 5vh auto;
+    height: 92vh;
+    outline: var(--debug);
+    display: grid;
+    place-items: center;
+}
+.inner-body {
+    display: grid;
+    outline: var(--debug);
+    height: 90vh;
+    width: 98%;
+    grid-template-columns: 30% 20% 20% 30%;
+}
