@@ -26,9 +26,9 @@
 }
 
 .outer-body {
-    width:30%;
+    width:500px;
     margin: 5vh auto;
-    height: 92vh;
+    height: 1020px;
     outline: var(--debug);
     display: grid;
     place-items: center;
@@ -36,7 +36,100 @@
 .inner-body {
     display: grid;
     outline: var(--debug);
-    height: 90vh;
+    height: 1000px;
     width: 98%;
-    grid-template-columns: 30% 20% 20% 30%;
+    grid-template-rows: 30% 20% 20% 30%;
+}
+.upper-section, .second-section, .third-section-functions, .numerical-section {
+    outline: var(--debug);
+}
+.upper-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.body-text {
+    grid-column: 1 / span 2 ;
+    grid-row: span 2;
+    margin: auto;
+}
+.solar-panel {
+    grid-column: 3 / span 3;
+    grid-row: span 2;
+    width: 90%;
+    outline: var(--debug);
+    margin: auto;
+    height: 80px;
+}
+.screen {
+    grid-column: span 6;
+    grid-row: 3 / span 3;
+    outline: var(--debug);
+    width: 90%;
+    height: 150px;
+    margin: auto;
+}
+.second-section {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: repeat(5, 1fr);
+    overflow: hidden;
+}
+.second-section > div {
+    width: 95%;
+    margin: auto;
+    height: 90%;
+    outline: var(--debug);
+}
+.top-left-side-round {
+    grid-row: 1 / span 3;
+}
+.top-left-side-box {
+    grid-row: 4 / span 2;
+}
+.top-middle-buttons {
+    grid-row: 2 / 5;
+}
+.top-right-side-round {
+    grid-row: 1 / span 3;
+}
+.top-right-side-box {
+    grid-row: 4 / span 2;
+}
+
+.third-section-functions {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+.third-section-functions > div {
+    outline: var(--debug);
+}
+.middle-layer {
+    display: grid;
+    grid-template-columns:  repeat(6, 1fr);
+}
+.middle-layer > div {
+    outline: var(--debug);
+    width: 60%;
+    margin: auto;
+    height: 50%;
+}
+
+.numerical-section {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+.numerical-section > div {
+    outline: var(--debug);
+
+}
+.bottom-layer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.bottom-layer > div {
+    outline: var(--debug);
+    width: 70%;
+    margin: auto;
+    height: 75%;
 }
