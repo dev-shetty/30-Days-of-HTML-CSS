@@ -23,6 +23,8 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: var(--body-text-color);
+    outline: none !important;
 }
 
 .outer-body {
@@ -32,6 +34,8 @@
     outline: var(--debug);
     display: grid;
     place-items: center;
+    border-radius: 10px;
+    background-color: var(--outer-calc-body);
 }
 .inner-body {
     display: grid;
@@ -39,10 +43,10 @@
     height: 1000px;
     width: 98%;
     grid-template-rows: 30% 20% 20% 30%;
+    border-radius: 10px;
+    background-color: var(--middle-calc-body);
 }
-.upper-section, .second-section, .third-section-functions, .numerical-section {
-    outline: var(--debug);
-}
+
 .upper-section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -60,6 +64,8 @@
     outline: var(--debug);
     margin: auto;
     height: 80px;
+    border-radius: 5px;
+    background-color: var(--solar-panel);
 }
 .screen {
     grid-column: span 6;
@@ -68,6 +74,11 @@
     width: 90%;
     height: 150px;
     margin: auto;
+    border-radius: 10px;
+    background-color: var(--calc-screen);
+    color: var(--screen-text-color);
+    font-size: 2em;
+    padding: 2%;
 }
 .second-section {
     display: grid;
@@ -79,16 +90,18 @@
     width: 95%;
     margin: auto;
     height: 90%;
-    outline: var(--debug);
 }
 .top-left-side-round {
     grid-row: 1 / span 3;
+    outline: #020206;
+    height: 50px;
 }
 .top-left-side-box {
     grid-row: 4 / span 2;
 }
 .top-middle-buttons {
-    grid-row: 2 / 5;
+    grid-row: 1 / 6;
+    position: relative;
 }
 .top-right-side-round {
     grid-row: 1 / span 3;
@@ -96,32 +109,102 @@
 .top-right-side-box {
     grid-row: 4 / span 2;
 }
+.top-left-side-round, 
+.top-right-side-round,
+.top-left-side-box,
+.top-right-side-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.top-left-side-round > div, 
+.top-right-side-round > div {
+    outline: var(--debug);
+    height: 30%;
+    aspect-ratio: 1;
+    margin: auto;
+    border-radius: 50%;
+    background-color: var(--btn-top-layer);
+}
+.top-left-side-box > div, 
+.top-right-side-box > div {
+    outline: var(--debug);
+    height: 30px;
+    width: 50px;
+    margin-block: auto;
+    margin-left: 3%;
+    border-radius: 5px;
+    background-color: var(--btn-functions);
+}
+.top-left-side-box > div:nth-child(2), 
+.top-right-side-box > div:nth-child(2) {
+    margin-left: 17px;
+}
+.top-middle-buttons > div {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    outline: var(--debug);
+    background-color: var(--btn-top-layer);
+}
+.arrow-up {
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0 0 100vw 100vw;
+}
+.arrow-down {
+    left: 50%;
+    bottom: 25%;
+    transform: translate(-50%, 50%);
+    border-radius: 100vw 100vw 0 0;
+}
+.arrow-left {
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    border-radius: 100vw 100vw 0 0;
+
+}
+.arrow-right {
+    right: 20%;
+    top: 50%;
+    transform: translate(50%, -50%) rotate(90deg);
+    border-radius: 0 0 100vw 100vw;
+
+}
 
 .third-section-functions {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
 }
-.third-section-functions > div {
-    outline: var(--debug);
-}
 .middle-layer {
     display: grid;
     grid-template-columns:  repeat(6, 1fr);
+    gap: 5%;
 }
 .middle-layer > div {
     outline: var(--debug);
-    width: 60%;
+    width: 50px;
     margin: auto;
-    height: 50%;
+    height: 30px;
 }
-
+.middle-button > div {
+    border-radius: 5px;
+    background-color: var(--btn-functions);
+}
+.main-buttons > div{
+    border-radius: 8px;
+    background-color: var(--btn-primary);
+}
+.main-buttons:nth-child(1) > div:nth-child(4),
+.main-buttons:nth-child(1) > div:nth-child(5) {
+    background-color: var(--btn-clear-func);
+}
 .numerical-section {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
-}
-.numerical-section > div {
-    outline: var(--debug);
-
+    margin-inline: -2%;
+    margin-bottom: 5%;
 }
 .bottom-layer {
     display: grid;
@@ -132,4 +215,8 @@
     width: 70%;
     margin: auto;
     height: 75%;
+}
+.button div {
+    display: grid;
+    place-items: center;
 }
