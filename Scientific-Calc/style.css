@@ -17,16 +17,14 @@
     --solar-panel: #402d33;
     --screen-text-color: #25288b; 
 }
-
-
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     color: var(--body-text-color);
     outline: none !important;
+    user-select: none;
 }
-
 .outer-body {
     width:500px;
     margin: 5vh auto;
@@ -36,6 +34,7 @@
     place-items: center;
     border-radius: 10px;
     background-color: var(--outer-calc-body);
+    box-shadow: 20px 20px 10px var(--calc-reflection);
 }
 .inner-body {
     display: grid;
@@ -76,9 +75,12 @@
     margin: auto;
     border-radius: 10px;
     background-color: var(--calc-screen);
-    color: var(--screen-text-color);
     font-size: 2em;
     padding: 2%;
+}
+.screen p {
+    color: var(--screen-text-color);
+
 }
 .second-section {
     display: grid;
@@ -195,6 +197,7 @@
 .main-buttons > div{
     border-radius: 8px;
     background-color: var(--btn-primary);
+    font-size: 2em;
 }
 .main-buttons:nth-child(1) > div:nth-child(4),
 .main-buttons:nth-child(1) > div:nth-child(5) {
@@ -219,4 +222,20 @@
 .button div {
     display: grid;
     place-items: center;
+    box-shadow: 2px 5px var(--calc-reflection);
+}
+.button div:hover {
+    animation-name: button-press;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+}
+
+.top-left-side-box sub {
+    margin-left: -15%;
+}
+
+@keyframes button-press {
+    to{box-shadow: 0 0 var(--calc-reflection);
+        transform: translateX(5px);}
+
 }
