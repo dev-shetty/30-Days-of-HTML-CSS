@@ -1,4 +1,4 @@
-# 100 Days of Code 
+    # 100 Days of Code 
 ## I started 100 days of code for Frontend Development.
 ### It is mainly focused on HTML, CSS and JavaScript. 😄
 ### I am following some tutorials and also doing projects to be good with it and practicing is the best way of learning 🚀
@@ -95,3 +95,36 @@ Started a new project which is a restaurant page.
 
 
 **Day 19** - Finished the HTML and bsic CSS for a new project, Nike Product Card.
+
+
+**Day 20** - Added CSS to the Image side and partially finished the project.
+
+**Day 21** - Finished the Nike Product Card, some flaws here and there, but didn't want to waste much time in that.
+
+> NIke Product Card
+<img src="Project-images/NikeCard.jpg" width="500">
+
+<br>
+
+**Day 22** - Made Ironman using CSS box shadows, was a fun project to work on, will do more in my free time.
+
+> Ironman using CSS box shadows
+<img src="Project-images/IronMan.png" width="500">
+
+<br>
+
+**P.S.** The progress for next 4-5 days will be slow because of my Internal Examinations.
+<br>
+
+**Day 23** - Started working on making scientific calculator.
+
+**Day 24** - Done with the HTML of the calculator, just some CSS is remaining.
+
+**Day 25** - Finished the scientific calculator using CSS grids, wanted to do more detailed one but it was taking little more time and I had some other stuffs to do.
+
+> Scientfic Calculator using CSS
+<img src="Project-images/Scientific-Calculator.jpg" width="500">
+
+<br>
+
+**Starting javaScript from tomorrow :)**
