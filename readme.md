@@ -132,3 +132,5 @@ Started a new project which is a restaurant page.
 **Day 26** - Started Javascript basics following Code with Mosh's tutorial.
 
 Completed the tutorial - learned the basics of JS variables, arrays, objects and functions.
+
+Started freeCodeCamp JS course going to be a long run (:
