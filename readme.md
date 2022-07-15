@@ -134,3 +134,8 @@ Started a new project which is a restaurant page.
 Completed the tutorial - learned the basics of JS variables, arrays, objects and functions.
 
 Started freeCodeCamp JS course going to be a long run (:
+
+
+**Day 27** - Did one small project of freeCodeCamp tutorial
+
+Started Traversy Media javaScript tutorial and almost finished it all the learnings are in javascript-tutorial folder.
