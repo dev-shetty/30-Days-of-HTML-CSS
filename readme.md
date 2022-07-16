@@ -139,3 +139,5 @@ Started freeCodeCamp JS course going to be a long run (:
 **Day 27** - Did one small project of freeCodeCamp tutorial
 
 Started Traversy Media javaScript tutorial and almost finished it all the learnings are in javascript-tutorial folder.
+
+**Day 28** - Completed the Traversy Media Javascript beginner playlist.
