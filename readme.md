@@ -141,3 +141,7 @@ Started freeCodeCamp JS course going to be a long run (:
 Started Traversy Media javaScript tutorial and almost finished it all the learnings are in javascript-tutorial folder.
 
 **Day 28** - Completed the Traversy Media Javascript beginner playlist.
+
+**Day 29** - Completed a playlist of 4 videos of Traversy Media for DOM manipulation
+
+All the commands are there in DOM-js tutorial, with comments of what they do.
