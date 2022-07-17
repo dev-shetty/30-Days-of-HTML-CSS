@@ -128,3 +128,20 @@ Started a new project which is a restaurant page.
 <br>
 
 **Starting javaScript from tomorrow :)**
+
+**Day 26** - Started Javascript basics following Code with Mosh's tutorial.
+
+Completed the tutorial - learned the basics of JS variables, arrays, objects and functions.
+
+Started freeCodeCamp JS course going to be a long run (:
+
+
+**Day 27** - Did one small project of freeCodeCamp tutorial
+
+Started Traversy Media javaScript tutorial and almost finished it all the learnings are in javascript-tutorial folder.
+
+**Day 28** - Completed the Traversy Media Javascript beginner playlist.
+
+**Day 29** - Completed a playlist of 4 videos of Traversy Media for DOM manipulation
+
+All the commands are there in DOM-js tutorial, with comments of what they do.
