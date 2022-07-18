@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    gap: 5%;
+    margin-top: 7%;
+}
+.container {
+    border: 2px solid;
+    border-radius: 5%;
+    min-width: 500px;
+    max-width: 500px;
+    min-height: max(0px, 700px);
+    background-color: #ececec;
+}
+.card-diamond,
+.card-heart,
+.card-spade {
+    position: absolute;
+}
+.card-diamond {
+    left: 30%;
+    margin-left: 5%;
+    z-index: 1;
+    transform: rotate(36deg);
+}
+.card-heart {
+    left: 30%;
+    transform: rotate(24deg);
+}
+.card-spade {
+    left: 25%;
+    z-index: -1;
+    transform: rotate(12deg);
+}
+
+.card-spade:hover,
+.card-heart:hover,
+.card-diamond:hover {
+    z-index: 10;
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
+
+.card-value {
+    width: 100px;
+    aspect-ratio: 1;
+    margin: 5%;
+    font-size: 5em;
+    display: grid;
+    place-items: center;
+    color: red;
+    position: relative;
+}
+:is(.bottom-diamond, .bottom-heart, .bottom-spade) {
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    transform: rotate(180deg);
+}
+.top-diamond::after,
+.bottom-diamond::after,
+.heart,
+.bottom-spade::after,
+.top-spade::after {
+    content: "";
+    /* border: 2px solid; */
+    width: 50px;
+    aspect-ratio: 1;
+    position: absolute;    
+
+}
+.top-diamond::after {
+    top: 95%;
+    transform: rotate(45deg);
+    background-color: red;
+}
+.bottom-diamond::after {
+    top: 120%;
+    transform: rotate(45deg);
+    background-color: red;
+}
+.card-pattern {
+    width: 150px;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.diamond {
+    background-color: red;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.heart {
+    transform: translate(-50%, -50%) rotate(45deg) scale(0.8);
+    background-color: red;
+}
+.heart::after,
+.heart::before {
+    content: "";
+    width: inherit;
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+}
+.heart::before {
+    bottom: 75px;
+}
+.heart::after {
+    right: 75px;
+}
+.card-value .heart {
+    left: 50%;
+    top: 125%;
+}
+.card-value .heart::after {
+    left: -50%;
+}
+.card-value .heart::before {
+    top: -50%;
+}
+.spade .heart,
+.spade .heart::after,
+.spade .heart::before {
+    background-color: black;
+}
+.spade .heart {
+    transform: translate(-50%, -75%) rotate(225deg);
+}
+.card-spade .card-value {
+    color: black;
+}
+.card-spade .stem {
+    background-color: black;
+    position: absolute;
+    left: 48%;
+    bottom: 30%;
+    /* transform: translate(-50%, -50%); */
+    width: 20px;
+    height: 75px;
+    position: absolute;
+    border-radius: 0 0 100vw 100vw;
+}
+.stem::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 100px;
+    height: 40px;
+    left: -200%;
+    bottom: -25%;
+    border-radius: 0 0 100vw 100vw;
+    transform: rotate(180deg);
+}
+.top-spade .heart,
+.bottom-spade .heart {
+    top: 110%;
+    transform: translate(-50%, -50%) rotate(225deg) scale(0.7);
+}
+
+.top-spade .heart,
+.top-spade .heart::after,
+.top-spade .heart::before,
+.bottom-spade .heart,
+.bottom-spade .heart::after,
+.bottom-spade .heart::before {
+    background-color: black;
+}
+.top-spade .stem,
+.bottom-spade .stem {
+    transform: scale(0.3);
+    bottom: -80%;
+    left: 40%
+}
+
+/* @media (max-width:1000px) {
+    .card-diamond,
+    .card-heart,
+    .card-spade {
+        position: relative;
+        transform: scale(0.5);
+    }
+    .body {
+        display: flex;
+    }
+    .card-diamond {
+        left: 0;
+        margin-left: 5%;
+    }
+    .card-heart {
+        left: 0;
+    }
+    .card-spade {
+        left: 0;
+    }
+    
+} */
