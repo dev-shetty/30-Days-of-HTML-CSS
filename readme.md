@@ -145,3 +145,10 @@ Started Traversy Media javaScript tutorial and almost finished it all the learni
 **Day 29** - Completed a playlist of 4 videos of Traversy Media for DOM manipulation
 
 All the commands are there in DOM-js tutorial, with comments of what they do.
+
+**Day 30** - Made 3 card using pure CSS.... they are stacked on top of each other even the pattern is made purely using CSS.
+On hover the come in front in front and you can see the full card.
+
+<br>
+
+<img src="Project-images/Cards.png" width="500">
