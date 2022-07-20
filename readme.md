@@ -1,4 +1,4 @@
-    # 30 Days of Code 
+# 30 Days of Code 
 ## I started 30 days of code for Frontend Development.
 ### It is mainly focused on HTML, CSS and little JavaScript. 😄
 ### I am following some tutorials and also doing projects to be good with it and practicing is the best way of learning 🚀
