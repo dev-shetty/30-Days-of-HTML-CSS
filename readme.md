@@ -1,6 +1,6 @@
-    # 100 Days of Code 
-## I started 100 days of code for Frontend Development.
-### It is mainly focused on HTML, CSS and JavaScript. 😄
+# 30 Days of Code 
+## I started 30 days of code for Frontend Development.
+### It is mainly focused on HTML, CSS and little JavaScript. 😄
 ### I am following some tutorials and also doing projects to be good with it and practicing is the best way of learning 🚀
 
 ---
@@ -152,3 +152,6 @@ On hover the come in front in front and you can see the full card.
 <br>
 
 <img src="Project-images/Cards.png" width="500">
+
+
+## This was meant to be a 100 days of code but I divided it into 30 days for HTML & CSS and will start another one for javaScript.
